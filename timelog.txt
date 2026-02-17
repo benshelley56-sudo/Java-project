@@ -26,9 +26,9 @@ The expected minimum amount of time each Sprint for each category is as follows:
 
 |Date      |Start Time|Category|Description                                          |Total Minutes|
 |----------|----------|:------:|-----------------------------------------------------|:-----------:|
-|02/09/26  |4:30pm    |IM      | did research for writing java                       | 1:30        |
-|02/11/26  |3:30      |IM      | learned more about writing in java. got Hello world |             |
-|          |          |        |                                                     |             |
+|02/09/26  |4:30pm    |IM      | did research for writing java                       |1:30         |
+|02/11/26  |3:30pm    |IM      | learned more about writing in java. got Hello world |             |
+|02/17/26  |3:30pm    |IM      |                                                     |1:00         |
 |          |          |        |                                                     |             |
 |          |          |        |                                                     |             |
 |          |          |        |                                                     |             |
