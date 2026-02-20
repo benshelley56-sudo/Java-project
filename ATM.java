@@ -7,15 +7,14 @@ public class ATM {
 
     // Function to display the main menu
     static void displayMenu(String accountHolder) {
-        System.out.println("\n==========================================");
+        System.out.println("\n");
         System.out.println("   Welcome, " + accountHolder + "!");
-        System.out.println("==========================================");
+        System.out.println("");
         System.out.println("  1. Check Balance");
         System.out.println("  2. Deposit Money");
         System.out.println("  3. Withdraw Money");
         System.out.println("  4. View Transaction History");
         System.out.println("  5. Logout");
-        System.out.println("==========================================");
         System.out.print("  Enter your choice: ");
     }
 
@@ -23,11 +22,11 @@ public class ATM {
         Scanner scanner = new Scanner(System.in);
 
         // Create the one built-in account
-        BankAccount account = new BankAccount("John Doe", 1234, 500.0);
+        BankAccount account = new BankAccount("Ben", 1234, 500.0);
 
-        System.out.println("==========================================");
-        System.out.println("        Welcome to JavaBank ATM          ");
-        System.out.println("==========================================");
+        System.out.println("");
+        System.out.println("Welcome to Bank ATM");
+        System.out.println("");
 
         // Outer loop keeps the ATM running so a user can log in again after logging out
         boolean atmRunning = true;
@@ -99,10 +98,10 @@ public class ATM {
                         } else if (choice == 4) {
                             account.printHistory();
                         } else if (choice == 5) {
-                            System.out.println("\n👋 Logged out successfully. Thank you for using JavaBank ATM!");
+                            System.out.println("\nLogged out successfully. Thank you for using Bank ATM!");
                             sessionActive = false;
                         } else {
-                            System.out.println("\n✘ Invalid choice. Please select 1–5.");
+                            System.out.println("\n✘ Invalid choice. Please select 1-5.");
                         }
                     } else {
                         System.out.println("\n✘ Invalid input. Please enter a number.");
@@ -115,13 +114,13 @@ public class ATM {
                 String again = scanner.next();
                 if (!again.equalsIgnoreCase("yes")) {
                     atmRunning = false;
-                    System.out.println("\n🏦 Thank you for using JavaBank ATM. Goodbye!\n");
+                    System.out.println("\nThank you for using Bank ATM. Goodbye!\n");
                 }
 
             } else {
                 // Account is blocked after failed attempts — exit ATM
                 atmRunning = false;
-                System.out.println("\n🏦 ATM session ended.\n");
+                System.out.println("\nATM session ended.\n");
             }
         }
 

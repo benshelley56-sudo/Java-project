@@ -56,8 +56,8 @@ public class BankAccount {
 
     // Function to print transaction history using a loop
     public void printHistory() {
-        System.out.println("\n📋 Transaction History for " + owner + ":");
-        System.out.println("------------------------------------------");
+        System.out.println("\nTransaction History for " + owner + ":");
+        System.out.println("");
         if (transactionHistory.isEmpty()) {
             System.out.println("  No transactions yet.");
         } else {
@@ -66,7 +66,7 @@ public class BankAccount {
                 System.out.println("  " + (i + 1) + ". " + transactionHistory.get(i));
             }
         }
-        System.out.println("------------------------------------------");
+        System.out.println("");
     }
 
     // Getter for account owner name
